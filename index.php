@@ -1,4 +1,27 @@
 <?php include('partials-front/menu.php'); ?>
+<div class="age-verification-overlay">
+			<div class="age-verification-popup bg-white rounded">
+				<div class="row">
+					<div class="col-12 mb-3">
+						<div class="mx-auto">
+ <img  width="80" height="" loading="lazy"  class="section img-kenburns"  src="images/OIP.jpg"  alt="vinnu_lennartc">
+            </div>
+					</div>
+					<div class="col-12">
+						<p>To access this website, you must be over 18 years of age.</p>
+				</div>
+					<div class="col-12">
+						<a class="age-verification-btn btn rounded age-verification-btn-yes" href="#">Yes, I'm over 18 years old</a>
+					</div>
+					<div class="col-12 mt-3">
+						<a class="age-verification-btn grey age-verification-btn-no underline" href="https://www.healthywa.wa.gov.au/Articles/F_I/Information-for-parents-alcohol-and-the-developing-brain">I'm under 18 years old.</a>
+					</div>
+          <div class="col-12 mt-3">
+            <pre><a target="_blank" href="/">Raksi Sathi</a> 🎉</pre></div>
+				</div>
+			</div>
+		</div>
+
 
 <!-- raksi sEARCH Section Starts Here -->
 <section class="raksi-search text-center">
@@ -10,7 +33,6 @@
         </form>
 
     </div>
-</section>
 <!-- raksi sEARCH Section Ends Here -->
 
 <?php 
@@ -45,7 +67,7 @@
                     $image_name = $row['image_name'];
                     ?>
                     
-                    <a href="<?php echo SITEURL; ?>category-raksis.php?category_id=<?php echo $id; ?>">
+                    <a href="<?php echo SITEURL; ?>category-raksi.php?category_id=<?php echo $id; ?>">
                         <div class="box-3 float-container">
                             <?php 
                                 //Check whether Image is available or not
@@ -175,6 +197,10 @@
     </p>
 </section>
 <!-- raksi Menu Section Ends Here -->
-
-
+<script>
+   const yes = document.querySelector(".age-verification-btn-yes");
+   yes.addEventListener("click", () => {
+    document.querySelector(".age-verification-overlay").classList.add("d-none")
+   })
+</script>
 <?php include('partials-front/footer.php'); ?>

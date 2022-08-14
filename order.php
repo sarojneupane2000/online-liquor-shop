@@ -62,7 +62,7 @@
                         {
                             //Image is Available
                             ?>
-                            <img src="<?php echo SITEURL; ?>images/raksi/<?php echo $image_name; ?>" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                            <img src="<?php echo SITEURL; ?>images/raksi/<?php echo $image_name; ?>" alt="Raksi" class="img-responsive img-curve">
                             <?php
                         }
                     
@@ -87,16 +87,16 @@
             <fieldset>
                 <legend>Delivery Details</legend>
                 <div class="order-label">Full Name</div>
-                <input type="text" name="full-name" placeholder="E.g. William Moore" class="input-responsive" required>
+                <input type="text" name="full-name" placeholder="E.g.Ram Bahadur Jhakri" class="input-responsive" required>
 
                 <div class="order-label">Phone Number</div>
-                <input type="tel" name="contact" placeholder="E.g. 7410000000" class="input-responsive" required>
+                <input type="tel" name="contact" placeholder="E.g. 9869696969" class="input-responsive" required>
 
                 <div class="order-label">Email</div>
-                <input type="email" name="email" placeholder="E.g. william@codeastro.com" class="input-responsive" required>
+                <input type="email" name="email" placeholder="E.g. ramey@emaley.com" class="input-responsive" required>
 
                 <div class="order-label">Address</div>
-                <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+                <textarea name="address" rows="10" placeholder="E.g. Hadigaun" class="input-responsive" required></textarea>
 
                 <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
             </fieldset>
